@@ -1,0 +1,49 @@
+
+.titulo-princiapl {
+    padding: 20px;
+}
+
+.Banner{
+    width: 100%;
+}
+
+.principal {
+    background: #cccccc;
+    padding: 30px;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.aumentarFonte 
+{
+    
+    font-size: 20px;
+}
+.corNegrito 
+{
+   color: red; 
+}
+
+.beneficios
+{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.itens
+{
+    font-style: italic;
+}
+
+.imgBeneficios{
+    width: 50%;
+}

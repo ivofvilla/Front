@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contato - Barbearia Alura</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../reset.css">
+        <link rel="stylesheet" href="../generico.css">
+        <link rel="stylesheet" href="contatos.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="caixa">
+                <h1>
+                    <img src="../logo.png" alt="Logo da Barbearia Alura">
+                </h1>
+
+                <nav class="navegacao-produtos">
+                    <ul>
+                        <li><a href="../Index.html">Home</a></li>
+                        <li><a href="../produtos/produtos.html">Produtos</a></li>
+                        <li><a href="../contatos/contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="input-padrao" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="input-padrao" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="input-padrao" required>
+
+                <label for="mensagem">Telefone</label>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required>
+                </textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="selecione-email"  class="checkbox"> 
+                        <input type="radio" value="email" id="selecione-email" name="contato" placeholder="seumail@dominio.com">
+                        E-mail
+                    </label>
+                    
+                    <label for="selecione-telefone"  class="checkbox">
+                        <input type="radio" value="telefone" id="selecione-telefone" name="contato" placeholder="(xx) xxxxx-xxxx">
+                        Telefone
+                    </label>
+                    
+                    <label for="selecione-whats"  class="checkbox">
+                        <input type="radio" value="WhatsApp" id="selecione-whats" name="contato" checked>
+                        WhatsApp
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select name="slHorario" id="slHorario">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                
+                <label>
+                    <input type="checkbox" checked>
+                    Gostaria de receber nossas novidades por e-mail?
+                </label>
+                
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Hórario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>08 - 20 hs</td>
+                            </tr>
+                            <tr>
+                                <td>Terça</td>
+                                <td>08 - 20 hs</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>08 - 20 hs</td>
+                            </tr>
+                            <tr>
+                                <td>Quinta</td>
+                                <td>08 - 20 hs</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>08 - 20 hs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </main>
+        <footer>
+            <img src="../logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>

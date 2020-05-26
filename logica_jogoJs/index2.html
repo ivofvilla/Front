@@ -1,0 +1,29 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    for(w = 0; w < 600; w += 50)
+    {
+        for(h = 0; h < 400; h += 40)
+        {    
+            Quadrado('green', w, h, 50, 50, 'black');
+        }
+    }
+
+
+
+    function Quadrado(cor, x, y, altura, largura, borda)
+    {
+        if(borda !== undefined)
+        {
+            pincel.fillStroke = borda;
+            pincel.strokeRect(x, y, altura, largura)
+        }
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, altura, largura)
+    }
+
+</script>
